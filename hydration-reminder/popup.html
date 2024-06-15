@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Water Popup</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    #hydrateImage {
+      width: 100px;
+      margin: 5px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <img src="./images/stay_hydrated.gif" id="hydrateImage" />
+  <label for="alarmInterval">Interval (Minutes):</label>
+  <input placeholder="0" type="number" min="1" id="alarmInterval" />
+  <button class="button" id="setAlarm">Set Alarm</button>
+  <button class="button" id="cancelAlarm">Cancel Alarm</button>
+  <script src="popup.js"></script>
+</body>
+
+</html>
