@@ -5,12 +5,19 @@
   <title>Water Popup</title>
   <style>
     body {
-      text-align: center;
+
+      background-image: url("images/Vector.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 300px;
+      height: 400px;
+      border-radius: 5px;
     }
 
     #hydrateImage {
-      width: 100px;
+      width: 200px;
       margin: 5px;
+      align-self: center;
     }
   </style>
 
@@ -18,11 +25,19 @@
 </head>
 
 <body>
-  <img src="./images/stay_hydrated.gif" id="hydrateImage" />
-  <label for="alarmInterval">Interval (Minutes):</label>
-  <input placeholder="0" type="number" min="1" id="alarmInterval" />
-  <button class="button" id="setAlarm">Set Alarm</button>
-  <button class="button" id="cancelAlarm">Cancel Alarm</button>
+  <div id="main-container">
+    <img src="./images/drink-water.gif" id="hydrateImage" />
+    <div id="container">
+      <p class="label">Alarm Interval (minutes): </p>
+      <input placeholder="Input your interval" type="number" min="1" id="alarmInterval" />
+      <div id="button-container">
+        <button class="button" id="cancelAlarm">Cancel</button>
+        <button class="button" id="setAlarm">Set Alarm</button>
+      </div>
+    </div>
+  </div>
+
+
   <script src="popup.js"></script>
 </body>
 
