@@ -1,7 +1,7 @@
 {
   "name": "Hydration Reminder",
   "description": "Demonstrates usage and features of the event page by reminding user to drink water",
-  "version": "1.0",
+  "version": "1.1 ",
   "manifest_version": 3,
   "permissions": ["alarms", "notifications", "storage"],
   "background": {
