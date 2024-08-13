@@ -46,16 +46,11 @@
   margin-top: 10px;
 }
 
-#alarmInterval {
-  height: 30px;
-  font-size: 16px;
-  text-align: center;
-}
-
 #button-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 #container {
@@ -64,6 +59,15 @@
   justify-content: center;
   align-items: left;
   width: 80%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  justify-content: center;
+  align-items: left;
+  
 }
 
 #main-container {
@@ -76,4 +80,21 @@ input {
   padding: 10px;
   border-radius: 5px;
   border-width: 1px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#note {
+  font-size: 10px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+#designer-profile {
+  color:#3e688a
+}
+
+#designer-profile:hover {
+  color:#73ba85
 }

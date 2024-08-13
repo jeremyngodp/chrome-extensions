@@ -10,7 +10,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       width: 300px;
-      height: 400px;
+      height: 555px;
       border-radius: 5px;
     }
 
@@ -28,17 +28,27 @@
   <div id="main-container">
     <img src="./images/drink-water.gif" id="hydrateImage" />
     <div id="container">
-      <p class="label">Alarm Interval (minutes): </p>
-      <input placeholder="Input your interval" type="number" min="1" id="alarmInterval" />
+      <div class="field">
+        <p class="label">Alarm Interval (minutes): </p>
+        <input placeholder="Input your interval" type="number" min="1" id="alarmInterval" />
+      </div>
+
+      <div class="field">
+        <p class="label">Reminder Mesage: </p>
+        <input placeholder="Drink Water Buddy!" type="text" min="1" id="customText" />
+      </div>
+
       <div id="button-container">
         <button class="button" id="cancelAlarm">Cancel</button>
         <button class="button" id="setAlarm">Set Alarm</button>
       </div>
     </div>
+
+    <p id="note">Designed by <span><a id="designer-profile">@vy.sually</a></span></p>
   </div>
 
 
-  <script src="popup.js"></script>
+  <script type="module" src="popup.js"></script>
 </body>
 
 </html>
